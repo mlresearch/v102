@@ -1,0 +1,481 @@
+@Proceedings{midl19,
+  booktitle = {Proceedings of The 2nd International Conference on Medical Imaging with Deep Learning},
+  name = {International Conference on Medical Imaging with Deep Learning},
+  shortname = {MIDL},
+  editor = {Cardoso, M. Jorge and Feragen, Aasa and Glocker, Ben and Konukoglu, Ender and Oguz, Ipek and Unal, Gozde and Vercauteren, Tom},
+  volume = 102,
+  year = 2019,
+  start = {2019-07-08},
+  end = {2019-07-10},
+  published = {2019-05-24},
+  url = {http://2019.midl.io},
+  address = {London, United Kingdom},
+  conference_number = 2,
+  sections = {Preface|Contributed Papers},
+}
+
+@InProceedings{cardoso19,
+  section = {Preface},
+  title = {Preface},
+  author = {Cardoso, M. Jorge and Feragen, Aasa and Glocker, Ben and Konukoglu, Ender and Oguz, Ipek and Unal, Gozde and Vercauteren, Tom},
+  pages = {1-3},
+  abstract = {Preface to MIDL 2019}
+}
+
+@InProceedings{abdi19,
+  section = {Contributed Papers},
+  title = {AnatomyGen: Deep Anatomy Generation From Dense Representation With Applications in Mandible Synthesis},
+  author = {Abdi, {Amir H.} and Borgard, Heather and Abolmaesumi, Purang and Fels, Sidney},
+  pages = {4-14},
+  abstract = {This work is an effort in human anatomy synthesis using deep models.
+Here, we introduce a deterministic deep convolutional architecture to generate human anatomies represented as 3D binarized occupancy maps (voxel-grids). 
+The shape generation process is constrained by the 3D coordinates of a small set of landmarks selected on the surface of the anatomy.
+The proposed learning framework is empirically tested on the mandible bone where it was able to reconstruct the anatomies from landmark coordinates with the average landmark-to-surface error of 1.42~mm.
+Moreover, the model was able to linearly interpolate in the $\mathbb{Z}$-space and smoothly morph a given 3D anatomy to another. 
+The proposed approach can potentially be used in semi-automated segmentation with manual landmark selection as well as biomechanical modeling.
+Our main contribution is to demonstrate that deep convolutional architectures can generate high fidelity complex human  anatomies from abstract representations.}
+}
+
+@InProceedings{andrearczyk19,
+  section = {Contributed Papers},
+  title = {Exploring local rotation invariance in 3D CNNs with steerable filters},
+  author = {Andrearczyk, Vincent and Fageot, Julien and Oreiller, Valentin and Montet, Xavier and Depeursinge, Adrien},
+  pages = {15-26},
+  abstract = {Locally Rotation Invariant (LRI) image analysis was shown to be fundamental in many applications and in particular in medical imaging where local structures of tissues occur at arbitrary rotations.
+LRI constituted the cornerstone of several breakthroughs in texture analysis, including Local Binary Patterns (LBP), Maximum Response 8 (MR8) and steerable filterbanks.
+Whereas globally rotation invariant Convolutional Neural Networks (CNN) were recently proposed, LRI was very little investigated in the context of deep learning.
+We use trainable 3D steerable filters in CNNs in order to obtain LRI with directional sensitivity, i.e. non-isotropic filters.
+Pooling across orientation channels after the first convolution layer releases the constraint on finite rotation groups as assumed in several recent works.
+Steerable filters are used to achieve a fine and efficient sampling of 3D rotations.
+We only convolve the input volume with a set of Spherical Harmonics (SHs) modulated by trainable radial supports and directly steer the responses, resulting in a drastic reduction of trainable parameters and of convolution operations, as well as avoiding approximations due to interpolation of rotated kernels.
+The proposed method is evaluated and compared to standard CNNs on 3D texture datasets including synthetic volumes with rotated patterns and pulmonary nodule classification in CT.
+The results show the importance of LRI in CNNs and the need for a fine rotation sampling.}
+}
+
+@InProceedings{balsiger19,
+  section = {Contributed Papers},
+  title = {On the Spatial and Temporal Influence for the Reconstruction of Magnetic Resonance Fingerprinting},
+  author = {Balsiger, Fabian and Scheidegger, Olivier and Carlier, Pierre G. and Marty, Benjamin and Reyes, Mauricio},
+  pages = {27-38},
+  abstract = {Magnetic resonance fingerprinting (MRF) is a promising tool for fast and multiparametric quantitative MR imaging. A drawback of MRF, however, is that the reconstruction of the MR maps is computationally demanding and lacks scalability. Several works have been proposed to improve the reconstruction of MRF by deep learning methods. Unfortunately, such methods have never been evaluated on an extensive clinical data set, and there exists no consensus on whether a fingerprint-wise or spatiotemporal reconstruction is favorable. Therefore, we propose a convolutional neural network (CNN) that reconstructs MR maps from MRF-WF, a MRF sequence for neuromuscular diseases. We evaluated the CNN's performance on a large and highly heterogeneous data set consisting of 95 patients with various neuromuscular diseases. We empirically show the benefit of using the information of neighboring fingerprints and visualize, via occlusion experiments, the importance of temporal frames for the reconstruction.}
+}
+
+@InProceedings{bass19,
+  section = {Contributed Papers},
+  title = {Image Synthesis with a Convolutional Capsule Generative Adversarial Network},
+  author = {Bass, Cher and Dai, Tianhong and Billot, Benjamin and Arulkumaran, Kai and Creswell, Antonia and Clopath, Claudia and {De Paola}, Vincenzo and Bharath, Anil Anthony},
+  pages = {39-62},
+  abstract = {Machine learning for biomedical imaging often suffers from a lack of labelled training data. One solution is to use generative models to synthesise more data. To this end, we introduce CapsPix2Pix, which combines convolutional capsules with the \texttt{pix2pix} framework, to synthesise images conditioned on class segmentation labels. We apply our approach to a new biomedical dataset of cortical axons imaged by two-photon microscopy, as a method of data augmentation for small datasets. We evaluate performance both qualitatively and quantitatively. Quantitative evaluation is performed by using image data generated by either CapsPix2Pix or \texttt{pix2pix} to train a U-net on a segmentation task, then testing on real microscopy data. Our method quantitatively performs as well as \texttt{pix2pix}, with an order of magnitude fewer parameters. Additionally, CapsPix2Pix is far more capable at synthesising images of different appearance, but the same underlying geometry. Finally, qualitative analysis of the features learned by CapsPix2Pix suggests that individual capsules capture diverse and often semantically meaningful groups of features, covering structures such as synapses, axons and noise.}
+}
+
+@InProceedings{baur19,
+  section = {Contributed Papers},
+  title = {Fusing Unsupervised and Supervised Deep Learning for White Matter Lesion Segmentation},
+  author = {Baur, Christoph and Wiestler, Benedikt and Albarqouni, Shadi and Navab, Nassir},
+  pages = {63-72},
+  abstract = {Unsupervised Deep Learning for Medical Image Analysis is increasingly gaining attention, since it relieves from the need for annotating training data. Recently, deep generative models and representation learning have lead to new, exciting ways for unsupervised detection and delineation of biomarkers in medical images, such as lesions in brain MR. Yet, Supervised Deep Learning methods usually still perform better in these tasks, due to an optimization for explicit objectives. We aim to combine the advantages of both worlds into a novel framework for learning from both labeled \& unlabeled data, and validate our method on the challenging task of White Matter lesion segmentation in brain MR images. The proposed framework relies on modeling normality with deep representation learning for Unsupervised Anomaly Detection, which in turn provides optimization targets for training a supervised segmentation model from unlabeled data. In our experiments we successfully use the method in a Semi-supervised setting for tackling domain shift, a well known problem in MR image analysis, showing dramatically improved generalization. Additionally, our experiments reveal that in a completely Unsupervised setting, the proposed pipeline even outperforms the Deep Learning driven anomaly detection that provides the optimization targets.}
+}
+
+@InProceedings{blendowski19,
+  section = {Contributed Papers},
+  title = {Learning interpretable multi-modal features for alignment with supervised iterative descent},
+  author = {Blendowski, Max and Heinrich, Mattias P.},
+  pages = {73-83},
+  abstract = {Methods for deep learning based medical image registration have only recently approached the quality of classical model-based image alignment. The dual challenge of both a very large trainable parameter space and often insufficient availability of expert supervised correspondence annotations has led to slower progress compared to other domains such as image segmentation. Yet, image registration could also more directly benefit from an iterative solution than segmentation. We therefore believe that significant improvements, in particular for multi-modal registration, can be achieved by disentangling appearance-based feature learning and deformation estimation. In contrast to most previous approaches, our model does not require full deformation fields as supervision but rather only small incremental descent targets generated from organ labels during training. By mapping the complex appearance to a common feature space in which update steps of a first-order Taylor approximation (akin to a regularised Demons iteration) match the supervised descent direction, we can train a CNN-model that learns interpretable modality invariant features. Our experimental results demonstrate that these features can be plugged into conventional iterative optimisers and are more robust than state-of-the-art hand-crafted features for aligning MRI and CT images.}
+}
+
+@InProceedings{bokhorst19,
+  section = {Contributed Papers},
+  title = {Learning from sparsely annotated data for semantic segmentation in histopathology images},
+  author = {Bokhorst, {John-Melle} and Pinckaers, Hans and {van Zwam}, Peter and Nagtegaal, Iris and {van der Laak}, Jeroen and Ciompi, Francesco},
+  pages = {84-91},
+  abstract = {We investigate the problem of building convolutional networks for semantic segmentation in histopathology images when weak supervision in the form of sparse manual annotations is provided in the training set. We propose to address this problem by modifying the loss function in order to balance the contribution of each pixel of the input data. We introduce and compare two approaches of loss balancing when sparse annotations are provided, namely (1) instance based balancing and (2) mini-batch based balancing. We also consider a scenario of full supervision in the form of dense annotations, and compare the performance of using either sparse or dense annotations with the proposed balancing schemes. Finally, we show that using a bulk of sparse annotations and a small fraction of dense annotations allows to achieve performance comparable to full supervision.}
+}
+
+@InProceedings{burlutskiy19,
+  section = {Contributed Papers},
+  title = {Segmenting Potentially Cancerous Areas in Prostate Biopsies using Semi-Automatically Annotated Data},
+  author = {Burlutskiy, Nikolay and Pinchaud, Nicolas and Gu, Feng and H\"agg, Daniel and Andersson, Mats and Bj\"ork, Lars and Eur\e'n, Kristian and Svensson, Cristina and Wil\'en, Lena Kajland and Hedlund, Martin},
+  pages = {92-108},
+  abstract = {Gleason grading specified in ISUP 2014 is the clinical standard in staging prostate cancer and the most important part of the treatment decision. However, the grading is subjective and suffers from high intra and inter-user variability. To improve the consistency and objectivity in the grading, we introduced glandular tissue WithOut Basal cells (WOB) as the ground truth. The presence of basal cells is the most accepted biomarker for benign glandular tissue and the absence of basal cells is a strong indicator of acinar prostatic adenocarcinoma, the most common form of prostate cancer. Glandular tissue can objectively be assessed as WOB or not WOB by using specific immunostaining for glandular tissue (Cytokeratin 8/18) and for basal cells (Cytokeratin 5/6 + p63). Even more, WOB allowed us to develop a semi-automated data generation pipeline to speed up the tremendously time consuming and expensive process of annotating whole slide images by pathologists. We generated 295 prostatectomy images exhaustively annotated with WOB. Then we used our Deep Learning Framework, which achieved the $2^{nd}$ best reported score in Camelyon17 Challenge, to train networks for segmenting WOB in needle biopsies. Evaluation of the model on 63 needle biopsies showed promising results which were improved further by finetuning the model on 118 biopsies annotated with WOB, achieving F1-score of 0.80 and Precision-Recall AUC of 0.89 at the pixel-level. Then we compared the performance of the model against 17 biopsies annotated independently by 3 pathologists using only H\&E staining. The comparison demonstrated that the model performed on a par with the pathologists. Finally, the model detected and accurately outlined existing WOB areas in two biopsies incorrectly annotated as totally WOB-free biopsies by three pathologists and in one biopsy by two pathologists.}
+}
+
+@InProceedings{chen19,
+  section = {Contributed Papers},
+  title = {Deep Hierarchical Multi-label Classification of Chest X-ray Images},
+  author = {Chen, Haomin and Miao, Shun and Xu, Daguang and Hager, Gregory D. and Harrison, Adam P.},
+  pages = {109-120},
+  abstract = {Chest X-rays (CXRs) are a crucial and extraordinarily common diagnostic tool, leading to heavy research for Computer-Aided Diagnosis (CAD) solutions. However, both high classification accuracy and meaningful model predictions that respect and incorporate clinical taxonomies are crucial for CAD usability. To this end, we present a deep Hierarchical Multi-Label Classification (HMLC) approach for CXR CAD. Different than other hierarchical systems, we show that first training the network to model conditional probability directly and then refining it with unconditional probabilities is key in boosting performance. In addition, we also formulate a numerically stable cross-entropy loss function for unconditional probabilities that provides concrete performance improvements. To the best of our knowledge, we are the first to apply HMLC to medical imaging CAD. We extensively evaluate our approach on detecting 14 abnormality labels from the PLCO dataset, which comprises 198,000 manually annotated CXRs. We report a mean Area Under the Curve (AUC) of 0.887, the highest yet reported for this dataset. These performance improvements, combined with the inherent usefulness of taxonomic predictions, indicate that our approach represents a useful step forward for CXR CAD.}
+}
+
+@InProceedings{combalia19,
+  section = {Contributed Papers},
+  title = {Digitally Stained Confocal Microscopy through Deep Learning},
+  author = {Combalia, Marc and {P\'erez-Anker}, Javiera and {Garc\'ia-Herrera}, Adriana and Alos, {Ll\'ucia} and Vilaplana, {Ver\'onica} and {Marqu\'es}, Ferran and Puig, Susana and Malvehy, Josep},
+  pages = {121-129},
+  abstract = {Specialists have used confocal microscopy in the ex-vivo modality to identify Basal Cell Carcinoma tumors with an overall sensitivity of 96.6\% and specificity of 89.2\% {{Chung et al.}} ({2004}). However, this technology hasn't established yet in the standard clinical practice because most pathologists lack the knowledge to interpret its output.
+In this paper we propose a combination of deep learning and computer vision techniques to digitally stain confocal microscopy images into H\&E-like slides, enabling pathologists to interpret these images without specific training.
+We use a fully convolutional neural network with a multiplicative residual connection to denoise the confocal microscopy images, and then stain them using a Cycle Consistency Generative Adversarial Network.}
+}
+
+@InProceedings{dai19,
+  section = {Contributed Papers},
+  title = {Deep Reinforcement Learning for Subpixel Neural Tracking},
+  author = {Dai, Tianhong and Dubois, Magda and Arulkumaran, Kai and Campbell, Jonathan and Bass, Cher and Billot, Benjamin and Uslu, Fatmatulzehra and {de Paola}, Vincenzo and Clopath, Claudia and Bharath, {Anil Anthony}},
+  pages = {130-150},
+  abstract = {Automatically tracing elongated structures, such as axons and blood vessels, is a challenging problem in the field of biomedical imaging, but one with many downstream applications. Real, labelled data is sparse, and existing algorithms either lack robustness to different datasets, or otherwise require significant manual tuning. Here, we instead learn a tracking algorithm in a synthetic environment, and apply it to tracing axons. To do so, we formulate tracking as a reinforcement learning problem, and apply deep reinforcement learning techniques with a continuous action space to learn how to track at the subpixel level. We train our model on simple synthetic data and test it on mouse cortical two-photon microscopy images. Despite the domain gap, our model approaches the performance of a heavily engineered tracker from a standard analysis suite for neuronal microscopy. We show that fine-tuning on real data improves performance, allowing better transfer when real labelled data is available. Finally, we demonstrate that our model's uncertainty measure---a feature lacking in hand-engineered trackers---corresponds with how well it tracks the structure.}
+}
+
+@InProceedings{debel19,
+  section = {Contributed Papers},
+  title = {Stain-Transforming Cycle-Consistent Generative Adversarial Networks for Improved Segmentation of Renal Histopathology},
+  author = {{de Bel}, Thomas and Hermsen, Meyke and Kers, Jesper and {van der Laak}, Jeroen and Litjens, Geert},
+  pages = {151-163},
+  abstract = {The performance of deep learning applications in digital histopathology can deteriorate significantly due to staining variations across centers. We employ cycle-consistent generative adversarial networks (cycleGANs) for unpaired image-to-image translation, facilitating between-center stain transformation. We find that modifications to the original cycleGAN architecture make it more suitable for stain transformation, creating artificially stained images of high quality. Specifically,  changing the generator model to a smaller U-net-like architecture, adding an identity loss term, increasing the batch size and the learning all led to improved training stability and performance. Furthermore, we propose a method for dealing with tiling artifacts when applying the network on whole slide images (WSIs). We apply our stain transformation method on two datasets of PAS-stained (Periodic Acid-Schiff) renal tissue sections from different centers. We show that stain transformation is beneficial to the performance of cross-center segmentation, raising the Dice coefficient from 0.36 to 0.85 and from 0.45 to 0.73 on the two datasets.}
+}
+
+@InProceedings{dorent19,
+  section = {Contributed Papers},
+  title = {Learning joint lesion and tissue segmentation from task-specific hetero-modal datasets},
+  author = {Dorent, Reuben and Li, Wenqi and Ekanayake, Jinendra and Ourselin, Sebastien and Vercauteren, Tom},
+  pages = {164-174},
+  abstract = {Brain tissue segmentation from multimodal MRI is a key building block of many neuroscience analysis pipelines. It could also play an important role in many clinical imaging scenarios.
+Established tissue segmentation approaches have however not been developed to cope with large anatomical changes resulting from pathology. The effect of the presence of brain lesions, for example, on their performance is thus currently uncontrolled and practically unpredictable.
+Contrastingly, with the advent of deep neural networks (DNNs), segmentation of brain lesions has matured significantly and is achieving performance levels making it of interest for clinical use.
+However, few existing approaches allow for jointly segmenting normal tissue and brain lesions.
+Developing a DNN for such joint task is currently hampered by the fact that annotated datasets typically address only one specific task and rely on a task-specific hetero-modal imaging protocol.
+In this work, we propose a novel approach to build a joint tissue and lesion segmentation model from task-specific hetero-modal and partially annotated datasets.
+Starting from a variational formulation of the joint problem, we show how the expected risk can be decomposed and optimised empirically.
+We exploit an upper-bound of the risk to deal with missing imaging modalities.
+For each task, our approach reaches comparable performance than task-specific and fully-supervised models.}
+}
+
+@InProceedings{gadermayr19,
+  section = {Contributed Papers},
+  title = {Unsupervisedly Training GANs for Segmenting Digital Pathology with Automatically Generated Annotations},
+  author = {Gadermayr, Michael and Gupta, Laxmi and Klinkhammer, Barbara M. and Boor, Peter and Merhof, Dorit},
+  pages = {175-184},
+  abstract = {Recently, generative adversarial networks exhibited excellent performances in semi-supervised image analysis scenarios.
+	In this paper, we go even further by proposing a fully unsupervised approach for segmentation applications with prior knowledge of the objects' shapes.
+	We propose and investigate different strategies to generate simulated label data and perform image-to-image translation between the image and the label domain using an adversarial model.
+	For experimental evaluation, we consider the segmentation of the glomeruli, an application scenario from renal pathology.
+	Experiments provide proof of concept and also confirm that the strategy for creating the simulated label data is of particular relevance considering the stability of GAN trainings.}
+}
+
+@InProceedings{geyer19,
+  section = {Contributed Papers},
+  title = {Transfer Learning by Adaptive Merging of Multiple Models},
+  author = {Geyer, Robin and Corinzia, Luca and Wegmayr, Viktor},
+  pages = {185-196},
+  abstract = {Transfer learning has been an important ingredient of state-of-the-art deep learning models. In particular, it has significant impact when little data is available for the target task, such as in many medical imaging applications. Typically, transfer learning means pre-training the target model on a related task which has sufficient data available. However, often pre-trained models from several related tasks are available, and it would be desirable to transfer their combined knowledge by automatic weighting and merging. For this reason, we propose T-IMM (Transfer Incremental Mode Matching), a method to leverage several pre-trained models, which extends the concept of Incremental Mode Matching from lifelong learning to the transfer learning setting. Our method introduces layer wise mixing ratios, which are learned automatically and fuse multiple pre-trained models before fine-tuning on the new task. We demonstrate the efficacy of our method by the example of brain tumor segmentation in MRI (BRATS 2018 Challange). We show that fusing weights according to our framework, merging two models trained on general brain parcellation can greatly enhance the final model performance for small training sets when compared to standard transfer methods or state-of the art initialization. We further demonstrate that the benefit remains even when training on the entire Brats 2018 data set (255 patients).}
+}
+
+@InProceedings{gorriz19,
+  section = {Contributed Papers},
+  title = {Assessing Knee OA Severity with CNN attention-based end-to-end architectures},
+  author = {{G\'orriz}, Marc and Antony, Joseph and McGuinness, Kevin and {Gir\'o-i-Nieto}, Xavier and {O'Connor}, {Noel E.}},
+  pages = {197-214},
+  abstract = {This work proposes a novel end-to-end convolutional neural network (CNN) architecture to automatically quantify the severity of knee osteoarthritis (OA) using X-Ray images, which incorporates trainable attention modules acting as unsupervised fine-grained detectors of the region of interest (ROI). The proposed attention modules can be applied at different levels and scales across any CNN pipeline helping the network to learn relevant attention patterns over the most informative parts of the image at different resolutions. We test the proposed attention mechanism on existing state-of-the-art CNN architectures as our base models, achieving promising results on the benchmark knee OA datasets from the osteoarthritis initiative (OAI) and multicenter osteoarthritis study (MOST). All code from our experiments will be publicly available on the github repository: \url{https://github.com/marc-gorriz/KneeOA-CNNAttention}}
+}
+
+@InProceedings{gupta19a,
+  section = {Contributed Papers},
+  title = {Iterative learning to make the most of unlabeled and quickly obtained labeled data in histology},
+  author = {Gupta, Laxmi and {Mara Klinkhammer}, Barbara and Boor, Peter and Merhof, Dorit and Gadermayr, Michael},
+  pages = {215-224},
+  abstract = {Due to the increasing availability of digital whole slide scanners, the importance of image analysis in the field of digital pathology increased significantly.
+A major challenge and an equally big opportunity for analyses in this field is given by the wide range of tasks and different histological stains.
+Although sufficient image data is often available for training, the requirement for corresponding expert annotations inhibits clinical deployment. 
+Thus, there is an urgent need for methods which can be effectively trained with or adapted to a small amount of labeled training data. 
+Here, we propose a method to find an optimum trade-off between (low) annotation effort and (high) segmentation accuracy.
+For this purpose, we propose an approach based on a weakly supervised and an unsupervised learning stage relying on few roughly labeled samples and many unlabeled samples. 
+Although the idea of weakly annotated data is not new, we firstly investigate the applicability to digital pathology in a state-of-the-art machine learning setting.}
+}
+
+@InProceedings{gupta19b,
+  section = {Contributed Papers},
+  title = {Generative Image Translation for Data Augmentation of Bone Lesion Pathology},
+  author = {Gupta, Anant and Venkatesh, Srivas and Chopra, Sumit and Ledig, Christian},
+  pages = {225-235},
+  abstract = {Insufficient training data and severe class imbalance are often limiting factors when developing machine learning models for the classification of rare diseases. In this work, we address the problem of classifying bone lesions from X-ray images by increasing the small number of positive samples in the training set. We propose a generative data augmentation approach based on a cycle-consistent generative adversarial network that synthesizes bone lesions on images without pathology. We pose the generative task as an image-patch translation problem that we optimize specifically for distinct bones (humerus, tibia, femur). In experimental results, we confirm that the described method mitigates the class imbalance problem in the binary classification task of bone lesion detection. We show that the augmented training sets enable the training of superior classifiers achieving better performance on a held-out test set. Additionally, we demonstrate the feasibility of transfer learning and apply a generative model that was trained on one body part to another.}
+}
+
+@InProceedings{hagenah19,
+  section = {Contributed Papers},
+  title = {Cluster Analysis in Latent Space: Identifying Personalized Aortic Valve Prosthesis Shapes using Deep Representations},
+  author = {Hagenah, Jannis and K\"{u}hl, Kenneth and Scharfschwerdt, Michael and Ernst, Floris},
+  pages = {236-249},
+  abstract = {Due to the high inter-patient variability of anatomies, the field of personalized prosthetics gained attention during the last years. One potential application is the aortic valve. Even though its shape is highly patient-specific, state-of-the-art aortic valve prosthesis are not capable of reproducing this individual geometry. An appraoch to reach an economically reasonable personalization would be the identification of typical valve shapes using clustering, such that each patient could be treated with the prosthesis of the type that matches his individual geometry best. However, a cluster analysis directly in image space is not sufficient due to the curse of dimensionality and the high sensitivity to small translations or rotations. In this work, we propose representation learning to perform the cluster analysis in the latent space, while the evaluation of the identified prosthesis shapes is performed in image space using generative modeling. To this end, we set up a data set of 58 porcine aortic valves and provide a proof-of-concept of our method using convolutional autoencoders. Furthermore, we evaluated the learned representation regarding its reconstruction accuracy, compactness and smoothness. To the best of our knowledge, this work presents the first approach to derive prosthesis shapes data-drivenly using clustering in latent space.}
+}
+
+@InProceedings{hansen19,
+  section = {Contributed Papers},
+  title = {Sparse Structured Prediction for Semantic Edge Detection in Medical Images},
+  author = {Hansen, Lasse and Heinrich, {Mattias P.}},
+  pages = {250-259},
+  abstract = {In medical image analysis most state-of-the-art methods rely on deep neural networks with learned convolutional filters. For pixel-level tasks, e.g. multi-class segmentation, approaches build upon UNet-like encoder-decoder architectures show impressive results. However, at the same time, grid-based models often process images unnecessarily dense introducing large time and memory requirements. Therefore it is still a challenging problem to deploy recent methods in the clinical setting. Evaluating images on only a limited number of locations has the potential to overcome those limitations and may also enable the acquisition of medical images using adaptive sparse sampling, which could substantially reduce scan times and radiation doses.
+
+In this work we investigate the problem of semantic edge detection in CT and X-ray images from sparse sampling locations. We propose a deep learning architecture that comprises of two parts: 1) a lightweight fully convolutional CNN to extract informative sampling points and 2) our novel sparse structured prediction network (SSPNet). The SSPNet processes image patches on a graph generated from the sampled locations and outputs semantic edge activations for each patch which are accumulated in an array via a weighted voting scheme to recover a dense prediction. We conduct several ablation experiments for our network on a dataset consisting of 10 abdominal CT slices from VISCERAL and evaluate its performance against strong baseline UNets on the JSRT database of chest X-rays.}
+}
+
+@InProceedings{hashemi19,
+  section = {Contributed Papers},
+  title = {Exclusive Independent Probability Estimation using Deep 3D Fully Convolutional DenseNets: Application to IsoIntense Infant Brain MRI Segmentation},
+  author = {Hashemi, Seyed Raein and Prabhu, Sanjay P. and Warfield, Simon K. and Gholipour, Ali},
+  pages = {260-272},
+  abstract = {The most recent fast and accurate image segmentation methods are built upon fully convolutional deep neural networks. In particular, densely connected convolutional neural networks (DenseNets) have shown excellent performance in detection and segmentation tasks. In this paper, we propose new deep learning strategies for DenseNets to improve segmenting images with subtle differences in intensity values and features. In particular, we aim to segment brain tissue on infant brain MRI at about 6 months of age where white matter and gray matter of the developing brain show similar T1 and T2 relaxation times, thus appear to have similar intensity values on both T1- and T2-weighted MRI scans. Brain tissue segmentation at this age is, therefore, very challenging. 
+To this end, we propose an exclusive multi-label training strategy to segment the mutually exclusive brain tissues with similarity loss functions that automatically balance the training based on class prevalence. Using our proposed training strategy based on similarity loss functions and patch prediction fusion we decrease the number of parameters in the network, reduce the number of training classes, focusing the attention on less number of tasks, while mitigating the effects of data imbalance between labels and inaccuracies near patch borders.
+By taking advantage of these strategies we were able to perform fast image segmentation (less than 90 seconds per 3D volume) using a network with less parameters than many state-of-the-art networks (1.4 million parameters), overcoming issues such as 3D vs 2D training and large vs small patch size selection, while achieving the top performance in segmenting brain tissue among all methods tested in first and second round submissions of the isointense infant brain MRI segmentation (iSeg) challenge according to the official challenge test results.
+Our strategy improved the training process through balanced training and reduced complexity, and provided a trained model that works for any size input image and is faster and more accurate than many state-of-the-art methods.}
+}
+
+@InProceedings{huang19,
+  section = {Contributed Papers},
+  title = {Dynamic MRI Reconstruction with Motion-Guided Network},
+  author = {Huang, Qiaoying and Yang, Dong and Qu, Hui and Yi, Jingru and Wu, Pengxiang and Metaxas, Dimitris},
+  pages = {275-284},
+  abstract = {Temporal correlation in dynamic magnetic resonance imaging (MRI), such as cardiac MRI, is informative and important to understand motion mechanisms of body regions. Modeling such information into the MRI reconstruction process produces temporally coherent image sequence and reduces imaging artifacts and blurring. 
+However, existing deep learning based approaches neglect motion information during the reconstruction procedure, while traditional motion-guided methods are hindered by heuristic parameter tuning and long inference time.
+We propose a novel dynamic MRI reconstruction approach called MODRN that unitizes deep neural networks with motion information to improve reconstruction quality. The central idea is to decompose the motion-guided optimization problem of dynamic MRI reconstruction into three components: dynamic reconstruction, motion estimation and motion compensation. Extensive experiments have demonstrated the effectiveness of our proposed approach compared to other state-of-the-art approaches.}
+}
+
+@InProceedings{kervadec19,
+  section = {Contributed Papers},
+  title = {Boundary loss for highly unbalanced segmentation},
+  author = {Kervadec, Hoel and Bouchtiba, Jihene and Desrosiers, Christian and Granger, Eric and Dolz, Jose and {Ben Ayed}, Ismail},
+  pages = {285-296},
+  abstract = {Widely used loss functions for convolutional neural network (CNN) segmentation, e.g., Dice or cross-entropy, are based on integrals (summations) over the segmentation regions. Unfortunately, for  highly unbalanced segmentations, such regional losses have values that differ considerably -- typically of several orders of magnitude -- across segmentation classes, which may affect training performance and stability. We propose a boundary loss, which takes the form of a distance metric on the space of contours (or shapes), not regions. This can mitigate the difficulties of regional losses in the context of highly unbalanced segmentation problems because it uses integrals over the boundary (interface) between regions instead of unbalanced integrals over regions. Furthermore, a boundary loss provides information that is complimentary to regional losses. Unfortunately, it is not straightforward to represent the boundary points corresponding to the regional softmax outputs of a CNN. Our boundary loss is inspired by discrete (graph-based) optimization techniques for computing gradient flows of curve evolution. Following an integral approach for computing boundary variations, we express a non-symmetric $L_2$ distance on the space of shapes as a regional integral, which avoids completely local differential computations involving contour points. This yields a boundary loss expressed with the regional softmax probability outputs of the network, which can be easily combined with standard regional losses and implemented with any existing deep network architecture for N-D segmentation.  We report comprehensive evaluations on two benchmark datasets corresponding to difficult, highly unbalanced problems: the ischemic stroke lesion (ISLES) and white matter hyperintensities (WMH). Used in conjunction with the region-based generalized Dice loss (GDL), our boundary loss improves performance significantly compared to GDL alone, reaching up to 8\% improvement in Dice score and 10\%  improvement in Hausdorff score. It also yielded a more stable learning process. Our code is publicly available.}
+}
+
+@InProceedings{kia19,
+  section = {Contributed Papers},
+  title = {Neural Processes Mixed-Effect Models for Deep Normative Modeling of Clinical Neuroimaging Data},
+  author = {Kia, {Seyed Mostafa} and Marquand, {Andre F.}},
+  pages = {297-314},
+  abstract = {Normative modeling has recently been introduced as a promising approach for modeling variation of neuroimaging measures across individuals in order to derive biomarkers of psychiatric disorders. Current implementations rely on Gaussian process regression, which provides coherent estimates of uncertainty needed for the method but also suffers from drawbacks including poor scaling to large datasets and a reliance on fixed parametric kernels. In this paper, we propose a deep normative modeling framework based on neural processes (NPs) to solve these problems. To achieve this, we define a stochastic process formulation for mixed-effect models and show how NPs can be adopted for spatially structured mixed-effect modeling of neuroimaging data. This enables us to learn optimal feature representations and covariance structure for the random-effect and noise via global latent variables. In this scheme, predictive uncertainty can be approximated by sampling from the distribution of these global latent variables. On a publicly available clinical fMRI dataset, we compare the novelty detection performance of multivariate normative models estimated by the proposed NP approach to a baseline multi-task Gaussian process regression approach and show substantial improvements for certain diagnostic problems.}
+}
+
+@InProceedings{lafarge19,
+  section = {Contributed Papers},
+  title = {Capturing Single-Cell Phenotypic Variation via Unsupervised Representation Learning},
+  author = {Lafarge, Maxime W. and Caicedo, Juan C. and Carpenter, Anne E. and Pluim, Josien P.W. and Singh, Shantanu and Veta, Mitko},
+  pages = {315-325},
+  abstract = {We propose a novel variational autoencoder (VAE) framework for learning representations of cell images for the domain of image-based profiling, important for new therapeutic discovery.
+Previously, generative adversarial network-based (GAN) approaches were proposed to enable biologists to visualize structural variations in cells that drive differences in populations.
+However, while the images were realistic, they did not provide direct reconstructions from representations, and their performance in downstream analysis was poor. 
+
+We address these limitations in our approach by adding an adversarial-driven similarity constraint applied to the standard VAE framework, and a progressive training procedure that allows higher quality reconstructions than standard VAE's.
+The proposed models improve classification accuracy by 22\% (to 90\%) compared to the best reported GAN model, making it competitive with other models that have higher quality representations, but lack the ability to synthesize images.
+This provides researchers a new tool to match cellular phenotypes effectively, and also to gain better insight into cellular structure variations that are driving differences between populations of cells.}
+}
+
+@InProceedings{lee19,
+  section = {Contributed Papers},
+  title = {DavinciGAN: Unpaired Surgical Instrument Translation for Data Augmentation},
+  author = {Lee, Kyungmoon and Choi, {Min-Kook} and Jung, Heechul},
+  pages = {326-336},
+  abstract = {Recognizing surgical instruments in surgery videos is an essential process to describe surgeries, which can be used for surgery navigation and evaluation systems. In this paper, we argue that an imbalance problem is crucial when we train deep neural networks for recognizing surgical instruments using the training data collected from surgery videos since surgical instruments are not uniformly shown in a video. To address the problem, we use a generative adversarial network (GAN)-based approach to supplement insufficient training data. Using this approach, we could make training data have the balanced number of images for each class. However, conventional GANs such as CycleGAN and DiscoGAN, have a potential problem to be degraded in generating surgery images, and they are not effective to increase the accuracy of the surgical instrument recognition under our experimental settings. For this reason, we propose a novel GAN framework referred to as DavinciGAN, and we demonstrate that our method outperforms conventional GANs on the surgical instrument recognition task with generated training samples to complement the unbalanced distribution of human-labeled data.}
+}
+
+@InProceedings{liefers19,
+  section = {Contributed Papers},
+  title = {Dense Segmentation in Selected Dimensions: Application to Retinal Optical Coherence Tomography},
+  author = {Liefers, Bart and {Gonz\'alez-Gonzalo}, Cristina and Klaver, Caroline and {van Ginneken}, Bram and {S\'anchez}, {Clara I.}},
+  pages = {337-346},
+  abstract = {We present a novel convolutional neural network architecture designed for dense segmentation in a subset of the dimensions of the input data. 
+The architecture takes an N-dimensional image as input, and produces a label for every pixel in M output dimensions, where 0 < M < N.
+Large context is incorporated by an encoder-decoder structure, while funneling shortcut subnetworks provide precise localization.
+We demonstrate applicability of the architecture on two problems in retinal optical coherence tomography: segmentation of geographic atrophy and segmentation of retinal layers.
+Performance is compared against two baseline methods, that leave out either the encoder-decoder structure or the shortcut subnetworks.
+For segmentation of geographic atrophy, an average Dice score of 0.49 ± 0.21 was obtained, compared to 0.46 ± 0.22 and 0.28 ± 0.19 for the baseline methods, respectively.
+For the layer-segmentation task, the proposed architecture achieved a mean absolute error of 1.305 ± 0.547 pixels compared to 1.967 ± 0.841 and 2.166 ± 0.886± for the baseline methods.}
+}
+
+@InProceedings{lossau19,
+  section = {Contributed Papers},
+  title = {Dynamic Pacemaker Artifact Removal (DyPAR) from CT Data using CNNs},
+  author = {{Lossau (n\'{e}e Elss)}, Tanja and Nickisch, Hannes and Wissel, Tobias and Hakmi, Samer and Spink, Clemens and Morlock, {Michael M.} and Grass, Michael},
+  pages = {347-357},
+  abstract = {Metal objects in the human heart like implanted pacemakers frequently occur in elderly patients.
+Due to cardiac motion, they are not static during the CT acquisition and lead to heavy artifacts in reconstructed CT image volumes.
+Furthermore, cardiac motion precludes the application of standard metal artifact reduction methods which assume that the object does not move.
+We propose a deep-learning-based approach for dynamic pacemaker artifact removal which deals with metal shadow segmentation directly in the projection domain.
+The data required for supervised learning is generated by introducing synthetic pacemaker leads into 14 clinical data sets without pacemakers.
+CNNs achieve a Dice coefficient of $0.913$ on test data with synthetic metal leads.
+Application of the trained CNNs on eight data sets with real pacemakers and subsequent inpainting of the post-processed segmentation masks leads to significantly reduced metal artifacts in the reconstructed CT image volumes.}
+}
+
+@InProceedings{ma19,
+  section = {Contributed Papers},
+  title = {Group-Attention Single-Shot Detector (GA-SSD): Finding Pulmonary Nodules in Large-Scale CT Images},
+  author = {Ma, Jiechao and Li, Xiang and Li, Hongwei and Menze, Bjoern H. and Liang, Sen and Zhang, Rongguo and Zheng, Wei-Shi},
+  pages = {358-369},
+  abstract = {Early diagnosis of pulmonary nodules (PNs) can improve the survival rate of patients and yet is a challenging task for radiologists due to the image noise and artifacts in computed tomography (CT) images. In this paper, we propose a novel and effective abnormality detector implementing the attention mechanism and group convolution on 3D single-shot detector (SSD) called group-attention SSD (GA-SSD). We find that group convolution is effective in extracting rich context information between continuous slices, and attention network can learn the target features automatically. We collected a large-scale dataset that contained 4146 CT scans with annotations of varying types and sizes of PNs (even PNs smaller than 3mm). To the best of our knowledge, this dataset is the largest cohort with relatively complete annotations for PNs detection. Extensive experimental results show that the proposed group-attention SSD outperforms the conventional SSD framework as well as the state-of-the-art 3DCNN, especially on some challenging lesion types.}
+}
+
+@InProceedings{nguyen19,
+  section = {Contributed Papers},
+  title = {A novel segmentation framework for uveal melanoma in magnetic resonance imaging based on class activation maps},
+  author = {Nguyen, {Huu-Giao} and Pica, Alessia and Hrbacek, Jan and Weber, {Damien C.} and Rosa, Francesco La and Schalenbourg, Ann and Sznitman, Raphael and {Bach Cuadra}, Meritxell},
+  pages = {370-379},
+  abstract = {An automatic and accurate eye tumor segmentation from Magnetic Resonance images (MRI) could have a great clinical contribution for the purpose of diagnosis and treatment planning of intra-ocular cancer. For instance, the characterization of uveal melanoma (UM) tumors would allow the integration of 3D information for the radiotherapy and would also support further radiomics studies. In this work, we tackle two major challenges of UM segmentation: 1) the high heterogeneity of tumor characterization in respect to location, size and appearance and, 2) the difficulty in obtaining ground-truth delineations of medical experts for training. We propose a thorough segmentation pipeline consisting of a combination of two Convolutional Neural Networks (CNN). First, we consider the class activation maps (CAM) output from a Resnet classification model and the combination of Dense Conditional Random Field (CRF) with a prior information of sclera and lens from an Active Shape Model (ASM) to automatically extract the tumor location for all MRIs. Then, these immediate results will be inputted into a 2D-Unet CNN whereby using four encoder and decoder layers to produce the tumor segmentation. A clinical data set of 1.5T T1-w and T2-w images of 28 healthy eyes and 24 UM patients is used for validation. We show experimentally in two different MRI sequences that our weakly 2D-Unet approach outperforms previous state-of-the-art methods for tumor segmentation and that it achieves equivalent accuracy as when manual labels are used for training. These results are promising for further large-scale analysis and for introducing 3D ocular tumor information in the therapy planning.}
+}
+
+@InProceedings{oksuz19,
+  section = {Contributed Papers},
+  title = {High-quality segmentation of low quality cardiac MR images using k-space artefact correction},
+  author = {Oksuz, Ilkay and Clough, James and Bai, Wenjia and Ruijsink, Bram and Puyol-Ant{\'o}n, Esther and Cruz, Gastao and Prieto, Claudia and King, Andrew P. and Schnabel, Julia A.},
+  pages = {380-389},
+  abstract = {Deep learning methods have shown great success in segmenting the anatomical and pathological structures in medical images. This success is closely bounded with the quality of the  images in the dataset that are being segmented. A commonly overlooked issue in the medical image analysis community is the vast amount of clinical images that have severe image artefacts. In this paper, we discuss the implications of image artefacts on cardiac MR segmentation and compare a variety of approaches for motion artefact correction with our proposed method Automap-GAN. Our method is based on the recently developed Automap reconstruction method, which directly reconstructs high quality MR images from k-space using deep learning. We propose to use a loss function that combines mean square error with structural similarity index to robustly segment poor-quality images. We train the reconstruction network to automatically correct for motion-related artefacts using synthetically corrupted CMR k-space data and uncorrected reconstructed images. In the experiments, we apply the proposed method to correct for motion artefacts on a large dataset of 1,400 subjects to improve image quality. The improvement of image quality is quantitatively assessed using segmentation accuracy as a metric. The segmentation is improved from 0.63 to 0.72 dice overlap after artefact correction. We quantitatively compare our method with a variety of techniques for recovering image quality to showcase the influence on segmentation. In addition, we qualitatively evaluate the proposed technique using k-space data containing real motion artefacts.}
+}
+
+@InProceedings{qu19,
+  section = {Contributed Papers},
+  title = {Weakly Supervised Deep Nuclei Segmentation using Points Annotation in Histopathology Images},
+  author = {Qu, Hui and Wu, Pengxiang and Huang, Qiaoying and Yi, Jingru and Riedlinger, Gregory M. and De, Subhajyoti and Metaxas, Dimitris N.},
+  pages = {390-400},
+  abstract = {Nuclei segmentation is a fundamental task in histopathological image analysis. Typically, such segmentation tasks require significant effort to manually generate pixel-wise annotations for fully supervised training. To alleviate the manual effort, in this paper we propose a novel approach using points only annotation. Two types of coarse labels with complementary information are derived from the points annotation, and are then utilized to train a deep neural network. The fully-connected conditional random field loss is utilized to further refine the model without introducing extra computational complexity during inference. Experimental results on two nuclei segmentation datasets reveal that the proposed method is able to achieve competitive performance compared to the fully supervised counterpart and the state-of-the-art methods while requiring significantly less annotation effort. Our code is publicly available.}
+}
+
+@InProceedings{roulet19,
+  section = {Contributed Papers},
+  title = {Joint Learning of Brain Lesion and Anatomy Segmentation from Heterogeneous Datasets},
+  author = {Roulet, Nicolas and Slezak, Diego Fernandez and Ferrante, Enzo},
+  pages = {401-413},
+  abstract = {Brain lesion and anatomy segmentation in magnetic resonance images are fundamental tasks in neuroimaging research and clinical practice. Given enough training data, convolutional neuronal networks (CNN) proved to outperform all existent techniques in both tasks independently. However, to date, little work has been done regarding simultaneous learning of brain lesion and anatomy segmentation from disjoint datasets.
+
+In this work we focus on training a single CNN model to predict brain tissue and lesion segmentations using heterogeneous datasets labeled independently, according to only one of these tasks (a common scenario when using publicly available datasets). We show that label contradiction issues can arise in this case, and propose a novel \textit{adaptive cross entropy} (ACE) loss function that makes such training possible. We provide quantitative evaluation in two different scenarios, benchmarking the proposed method in comparison with a multi-network approach. Our experiments suggest ACE loss enables training of single models when standard cross entropy and Dice loss functions tend to fail. Moreover, we show that it is possible to achieve competitive results when comparing with multiple networks trained for independent tasks.}
+}
+
+@InProceedings{saha19,
+  section = {Contributed Papers},
+  title = {Learning with Multitask Adversaries using Weakly Labelled Data for Semantic Segmentation in Retinal Images},
+  author = {Saha, Oindrila and Sathish, Rachana and Sheet, Debdoot},
+  pages = {414-426},
+  abstract = {A prime challenge in building data driven inference models is the unavailability of statistically significant amount of labelled data. Since datasets are typically designed for a specific purpose, and accordingly are weakly labelled for only a single class instead of being exhaustively annotated. Despite there being multiple datasets which cumulatively represents a large corpus, their weak labelling poses challenge for direct use. In case of retinal images, they have inspired development of data driven learning based algorithms for segmenting anatomical landmarks like vessels and optic disc as well as pathologies like microaneurysms, hemorrhages, hard exudates and soft exudates. The aspiration is to learn to segment all such classes using only a single fully convolutional neural network (FCN), while the challenge being that there is no single training dataset with all classes annotated. We solve this problem by training a single network using separate weakly labelled datasets. Essentially we use an adversarial learning approach in addition to the classically employed objective of distortion loss minimization for semantic segmentation using FCN, where the objectives of discriminators are to learn to (a) predict which of the classes are actually present in the input fundus image, and (b) distinguish between manual annotations vs. segmented results for each of the classes. The first discriminator works to enforce the network to segment those classes which are present in the fundus image although may not have been annotated i.e. all retinal images have vessels while pathology datasets may not have annotated them in the dataset. The second discriminator contributes to making the segmentation result as realistic as possible. We experimentally demonstrate using weakly labelled datasets of DRIVE containing only annotations of vessels and IDRiD containing annotations for lesions and optic disc. Our method using a single FCN achieves competitive results over prior art for either vessel or optic disk or pathology segmentation on these datasets.}
+}
+
+@InProceedings{shaw19,
+  section = {Contributed Papers},
+  title = {MRI k-Space Motion Artefact Augmentation: Model Robustness and Task-Specific Uncertainty},
+  author = {Shaw, Richard and Sudre, Carole and Ourselin, Sebastien and Cardoso, M. Jorge},
+  pages = {427-436},
+  abstract = {Patient movement during the acquisition of magnetic resonance images (MRI) can cause unwanted image artefacts.
+These artefacts may affect the quality of diagnosis by clinicians and cause errors in automated image analysis.
+In this work, we present a method for generating realistic motion artefacts from artefact-free data to be used in deep learning frameworks to increase training appearance variability and ultimately make machine learning algorithms such as convolutional neural networks (CNNs) robust to the presence of motion artefacts. We model patient movement as a sequence of randomly-generated, `de-meaned', rigid 3D affine transforms which, by resampling artefact-free volumes, are then combined in k-space to generate realistic motion artefacts. We show that by augmenting the training of semantic segmentation CNNs with artefacted data, we can train models that generalise better and perform more reliably in the presence of artefacted data, with negligible cost to their performance on artefact-free data.
+We show that the performance of models trained using artefacted data on segmentation tasks on real-world test-retest image pairs is more robust. Finally, we demonstrate that measures of uncertainty obtained from motion augmented models reflect the presence of artefacts and can thus provide relevant information to ensure the safe usage of deep learning extracted biomarkers in clinics.}
+}
+
+@InProceedings{souza19,
+  section = {Contributed Papers},
+  title = {A Hybrid, Dual Domain, Cascade of Convolutional Neural Networks for Magnetic Resonance Image Reconstruction},
+  author = {Souza, Roberto and Lebel, R. Marc and Frayne, Richard},
+  pages = {437-446},
+  abstract = {Deep-learning-based magnetic resonance (MR) imaging reconstruction techniques have the potential to accelerate MR image acquisition by reconstructing in real-time clinical quality images from k-spaces sampled at rates lower than specified by the Nyquist-Shannon sampling theorem, which is known as compressed sensing. In the past few years, several deep learning network architectures have been proposed for MR compressed sensing reconstruction. After examining the successful elements in these network architectures, we propose a hybrid frequency-/image-domain cascade of convolutional neural networks intercalated with data consistency layers that is trained end-to-end for compressed sensing reconstruction of MR images. We compare our method with five recently published deep learning-based methods using MR raw data. Our results indicate that our architecture improvements were statistically significant (Wilcoxon signed-rank test, $p<0.05$). Visual assessment of the images reconstructed confirm that our method outputs images similar to the fully sampled reconstruction reference.}
+}
+
+@InProceedings{sudre19,
+  section = {Contributed Papers},
+  title = {3D multirater RCNN for multimodal multiclass detection and characterisation of extremely small objects},
+  author = {Sudre, {Carole H.} and {Gomez Anson}, Beatriz and Ingala, Silvia and Lane, {Chris D.} and Jimenez, Daniel and Haider, Lukas and Varsavsky, Thomas and Smith, Lorna and Ourselin, S{\'e}bastien and { J{\"a}ger}, {Rolf H.} and Cardoso, {M. Jorge}},
+  pages = {447-456},
+  abstract = {Extremely small objects (ESO) have become observable on clinical routine magnetic resonance imaging acquisitions, thanks to a reduction in acquisition time at higher resolution. Despite their small size (usually <10 voxels per object for an image of more than $10^6$ voxels), these markers reflect tissue damage and need to be accounted for to investigate the complete phenotype of complex pathological pathways. In addition to their very small size, variability in shape and appearance leads to high labelling variability across human raters, resulting in a very noisy gold standard. 
+Such objects are notably present in the context of cerebral small vessel disease where enlarged perivascular spaces and lacunes, commonly observed in the ageing population, are thought to be associated with acceleration of cognitive decline and risk of dementia onset. In this work, we redesign the RCNN model to scale to 3D data, and to jointly detect and characterise these important markers of age-related neurovascular changes. We also propose training strategies enforcing the detection of extremely small objects, ensuring a tractable and stable training process.}
+}
+
+@InProceedings{tang19,
+  section = {Contributed Papers},
+  title = {XLSor: A Robust and Accurate Lung Segmentor on Chest X-Rays Using Criss-Cross Attention and Customized Radiorealistic Abnormalities Generation},
+  author = {Tang, You-Bao and Tang, Yu-Xing and Xiao, Jing and Summers, Ronald M.},
+  pages = {457-467},
+  abstract = {This paper proposes a novel framework for lung segmentation in chest X-rays. It consists of two key contributions, a criss-cross attention based segmentation network and radiorealistic chest X-ray image synthesis (\textit{i}.\textit{e}.  a synthesized radiograph that appears anatomically realistic) for data augmentation.
+The criss-cross attention modules capture rich global contextual information in both horizontal and vertical directions for all the pixels thus facilitating accurate lung segmentation. 
+To reduce the manual annotation burden and to train a robust lung segmentor that can be adapted to pathological lungs with hazy lung boundaries, an image-to-image translation module is employed to synthesize radiorealistic abnormal CXRs from the source of normal ones for data augmentation. 
+The lung masks of synthetic abnormal CXRs are propagated from the segmentation results of their normal counterparts, and then serve as pseudo masks for robust segmentor training. In addition, we annotate 100 CXRs with lung masks on a more challenging NIH Chest X-ray dataset containing both posterioranterior and anteroposterior views for evaluation. Extensive experiments validate the robustness and effectiveness of the proposed framework. The code and data can be found from \url{https://github.com/rsummers11/CADLab/tree/master/Lung_Segmentation_XLSor}.}
+}
+
+@InProceedings{toth19,
+  section = {Contributed Papers},
+  title = {Training Deep Networks on Domain Randomized Synthetic X-ray Data for Cardiac Interventions},
+  author = {Toth, Daniel and Cimen, Serkan and Ceccaldi, Pascal and Kurzendorfer, Tanja and Rhode, Kawal and Mountney, Peter},
+  pages = {468-482},
+  abstract = {One of the most significant challenges of using machine learning to create practical clinical applications in medical imaging is the limited availability of training data and accurate annotations. This problem is acute in novel multi-modal image registration applications where complete datasets may not be collected in standard clinical practice, data may be collected at different times and deformation makes perfect annotations impossible. Training machine learning systems on fully synthetic data is becoming increasingly common in the research community. However, transferring to real world applications without compromising performance is highly challenging. Transfer learning methods adapt the training data, learned features, or the trained models to provide higher performance on the target domain. These methods are designed with the  available samples, but if the samples used are not representative of the target domain, the method will overfit to the samples and will not generalize. This problem is exacerbated in medical imaging, where data of the target domain is extremely scarse. This paper proposes to use Domain Randomization (DR) to bridge the reality gap between the training and target domains, requiring no samples of the target domain. DR adds unrealistic perturbations to the training data, such that the target domain becomes just another variation. The effects of DR are demonstrated on a challenging task: 3D/2D cardiac model-to-X-ray registration, trained fully on synthetic data generated from 1711 clinical CT volumes. A thorough qualitative and quantitative evaluation of transfer to clinical data is performed. Results show that without DR training parameters have little influence on performance on the training domain of digitally reconstructed radiographs, but can cause substantial variation on the target domain (X-rays). DR results in a significantly more consistent transfer to the target domain.}
+}
+
+@InProceedings{tousignant19,
+  section = {Contributed Papers},
+  title = {Prediction of Disease Progression in Multiple Sclerosis Patients using Deep Learning Analysis of MRI Data},
+  author = {Tousignant, Adrian and Lema\^itre, Paul and Precup, Doina and Arnold, Douglas L. and Arbel, Tal},
+  pages = {483-492},
+  abstract = {We present the first automatic end-to-end deep learning framework for the prediction of future patient disability progression (one year from baseline) based on multi-modal brain Magnetic Resonance Images (MRI) of patients with Multiple Sclerosis (MS).
+The model uses parallel convolutional pathways, an idea introduced by the popular Inception net~{{Szegedy et al.}} ({2015}) and is trained and tested on two large proprietary, multi-scanner, multi-center, clinical trial datasets of patients with Relapsing-Remitting Multiple Sclerosis (RRMS). Experiments on 465 patients on the placebo arms of the trials indicate that the model can accurately predict future disease progression, measured by a sustained increase in the extended disability status scale (EDSS) score over time.  Using only the multi-modal MRI provided at baseline, the model achieves an AUC of 0.66 ± 0.055. However, when supplemental lesion label masks are provided as inputs as well, the AUC increases to 0.701 ± 0.027. Furthermore, we demonstrate that uncertainty estimates based on Monte Carlo dropout sample variance correlate with errors made by the model. Clinicians provided with the predictions computed by the model can therefore use the associated uncertainty estimates to assess which scans require further examination.}
+}
+
+@InProceedings{vedula19,
+  section = {Contributed Papers},
+  title = {Learning beamforming in ultrasound imaging},
+  author = {Vedula, Sanketh and Senouf, Grigoriy and Bronstein, Alex and Michailovich, Oleg and Zibulevsky, Michael},
+  pages = {493-511},
+  abstract = {Medical ultrasound (US) is a widespread imaging modality owing its popularity to cost efficiency, portability, speed, and lack of harmful ionizing radiation. In this paper, we demonstrate that replacing the traditional ultrasound processing pipeline with a data-driven, learnable counterpart leads to significant improvement in image quality. Moreover, we demonstrate that greater improvement can be achieved through a learning-based design of the transmitted beam patterns simultaneously with learning an image reconstruction pipeline. We evaluate our method on an in-vivo first-harmonic cardiac ultrasound dataset acquired from volunteers and demonstrate the significance of the learned pipeline and transmit beam patterns on the image quality when compared to standard transmit and receive beamformers used in high frame-rate US imaging. We believe that the presented methodology provides a fundamentally different perspective on the classical problem of ultrasound beam pattern design.}
+}
+
+@InProceedings{xia19,
+  section = {Contributed Papers},
+  title = {Adversarial Pseudo Healthy Synthesis Needs Pathology Factorization},
+  author = {Xia, Tian and Chartsias, Agisilaos and Tsaftaris, Sotirios A.},
+  pages = {512-526},
+  abstract = {Pseudo healthy synthesis, i.e. the creation of a subject-specific `healthy' image from a pathological one, could be helpful in tasks such as anomaly detection, understanding changes induced by pathology and disease or even as data augmentation. We treat this task as a factor decomposition problem:  we aim to separate what appears to be healthy and where disease is (as a map). The two factors are then recombined (by a network) to reconstruct the input disease image. We train our models in an adversarial way using either paired or unpaired settings, where we pair disease images and maps (as segmentation masks) when available. We quantitatively evaluate the quality of pseudo healthy images. We show in a series of experiments, performed in ISLES and BraTS datasets, that our method is better than conditional GAN and CycleGAN, highlighting challenges in using adversarial methods in the image translation task of pseudo healthy image generation.}
+}
+
+@InProceedings{xie19,
+  section = {Contributed Papers},
+  title = {VOCA: Cell Nuclei Detection In Histopathology Images By Vector Oriented Confidence Accumulation},
+  author = {Xie, Chensu and Vanderbilt, Chad M. and Grabenstetter, Anne and Fuchs, Thomas J.},
+  pages = {527-539},
+  abstract = {
+Cell nuclei detection is the basis for many tasks in Computational Pathology ranging from cancer diagnosis to survival analysis.
+It is a challenging task due to the significant inter/intra-class variation of cellular morphology. The problem is aggravated by the need for additional accurate localization of the nuclei for downstream applications.
+Most of the existing methods regress the probability of each pixel being a nuclei centroid, while relying on post-processing to implicitly infer the rough location of nuclei centers.
+To solve this problem we propose a novel multi-task learning framework called vector oriented confidence accumulation (VOCA) based on deep convolutional encoder-decoder. The model learns a confidence score, localization vector and weight of contribution for each pixel. The three tasks are trained concurrently and the confidence of pixels are accumulated according to the localization vectors in detection stage to generate a sparse map that describes accurate and precise cell locations.
+A detailed comparison to the state-of-the-art based on a publicly available colorectal cancer dataset showed superior detection performance and significantly higher localization accuracy.}
+}
+
+@InProceedings{you19,
+  section = {Contributed Papers},
+  title = {Unsupervised Lesion Detection via Image Restoration with a Normative Prior},
+  author = {You, Suhang and Tezcan, Kerem C. and Chen, Xiaoran and Konukoglu, Ender},
+  pages = {540-556},
+  abstract = {While human experts excel in and rely on identifying an abnormal structure when assessing a medical scan, without necessarily specifying the type, current unsupervised abnormality detection methods are far from being practical. Recently proposed deep-learning (DL) based methods were initial attempts at showing the capabilities of this approach. In this work, we propose an outlier detection method combining image restoration with unsupervised learning based on DL. A normal anatomy prior is learned by training a Gaussian Mixture Variational Auto-Encoder (GMVAE) on images from healthy individuals. This prior is then used in a Maximum-A-Posteriori (MAP) restoration model to detect outliers. Abnormal lesions, not represented in the prior, are removed from the images during restoration to satisfy the prior and the difference between original and restored images form the detection of the method. We evaluated the proposed method on Magnetic Resonance Images (MRI) of patients with brain tumors and compared against previous baselines. Experimental results indicate that the method is capable of detecting lesions in the brain and achieves improvement over the current state of the art.}
+}
+
+@InProceedings{zanjani19,
+  section = {Contributed Papers},
+  title = {Deep Learning Approach to Semantic Segmentation in 3D Point Cloud Intra-oral Scans of Teeth},
+  author = {{Ghazvinian Zanjani}, Farhad and {Anssari Moin}, David and {Verheij}, Bas and {Claessen}, Frank and {Cherici}, Teo and {Tan}, Tao and {de With}, {Peter H. N.}},
+  pages = {557-571},
+  abstract = {Accurate segmentation of data, derived from intra-oral scans (IOS), is a crucial step in a computer-aided design (CAD) system for many clinical tasks, such as implantology and orthodontics in modern dentistry. In order to reach the highest possible quality, a segmentation model may process a point cloud derived from an IOS in its highest available spatial resolution, especially for performing a valid analysis in finely detailed regions such as the curvatures in border lines between two teeth. 
+In this paper, we propose an end-to-end deep learning framework for semantic segmentation of individual teeth as well as the gingiva from point clouds representing IOS. By introducing a non-uniform resampling technique, our proposed model is trained and deployed on the highest available spatial resolution where it learns the local fine details along with the global coarse structure of IOS. 
+Furthermore, the point-wise cross-entropy loss for semantic segmentation of a point cloud is an ill-posed problem, since the relative geometrical structures between the instances (e.g. the teeth) are not formulated. By training a secondary simple network as a discriminator in an adversarial setting and penalizing unrealistic arrangements of assigned labels to the teeth on the dental arch, we improve the segmentation results considerably. Hence, a heavy post-processing stage for relational and dependency modeling (e.g. iterative energy minimization of a constructed graph) is not required anymore. 
+Our experiments show that the proposed approach improves the performance of our baseline network and outperforms the state-of-the-art networks by achieving $0.94$ IOU score.}
+}
+
+@InProceedings{zhang19,
+  section = {Contributed Papers},
+  title = {SPDA: Superpixel-based Data Augmentation for Biomedical Image Segmentation},
+  author = {Zhang, Yizhe and Yang, Lin and Zheng, Hao and Liang, Peixian and Mangold, Colleen and Loreto, Raquel G. and Hughes, David P. and Chen, Danny Z.},
+  pages = {572-587},
+  abstract = {Supervised training a deep neural network aims to ``teach'' the network to mimic human visual perception that is represented by image-and-label pairs in the training data. Superpixelized (SP) images are visually perceivable to humans, but a conventionally trained deep learning model often performs poorly when working on SP images. To better mimic human visual perception, we think it is desirable for the deep learning model to be able to perceive not only raw images but also SP images. In this paper, we propose a new superpixel-based data augmentation (SPDA) method for training deep learning models for biomedical image segmentation. Our method applies a superpixel generation scheme to all the original training images to generate superpixelized images. The SP images thus obtained are then jointly used with the original training images to train a deep learning model. Our experiments of SPDA on four biomedical image datasets show that SPDA is effective and can consistently improve the performance of state-of-the-art fully convolutional networks for biomedical image segmentation in 2D and 3D images. Additional studies also demonstrate that SPDA can practically reduce the generalization gap.}
+}
+
+@InProceedings{zhuang19,
+  section = {Contributed Papers},
+  title = {CARE: Class Attention to Regions of Lesion for Classification on Imbalanced Data},
+  author = {Zhuang, Jiaxin and Cai, Jiabin and Wang, Ruixuan and Zhang, Jianguo and Zheng, Weishi},
+  pages = {588-597},
+  abstract = {To date, it is still an open and challenging problem for intelligent diagnosis
+systems to effectively learn from imbalanced data, especially with large
+samples of common diseases and much smaller samples of rare ones. Inspired by the process of human learning, this paper proposes a novel and effective way to embed attention into the machine learning process, particularly for learning characteristics of rare diseases. This approach does not change architectures of the original CNN classifiers and therefore can directly plug and play for any existing CNN architecture. Comprehensive experiments on a skin lesion dataset and a pneumonia chest X-ray dataset showed that paying attention to lesion regions of rare diseases during
+learning not only improved the classification performance on rare diseases, but
+also on the mean class accuracy.}
+}
+

@@ -1,0 +1,86 @@
+---
+booktitle: Proceedings of The 2nd International Conference on Medical Imaging with
+  Deep Learning
+shortname: MIDL
+volume: 102
+year: '2019'
+start: 2019-07-08
+end: 2019-07-10
+published: 2019-05-24
+url: http://proceedings.mlr.press
+conference_number: '2'
+sections:
+- name: Preface
+  title: Preface
+- name: Contributed Papers
+  title: Contributed Papers
+layout: proceedings
+series: Proceedings of Machine Learning Research
+id: midl19
+month: 0
+cycles: false
+bibtex_editor: Cardoso, M. Jorge and Feragen, Aasa and Glocker, Ben and Konukoglu,
+  Ender and Oguz, Ipek and Unal, Gozde and Vercauteren, Tom
+editor:
+- given: M. Jorge
+  family: Cardoso
+- given: Aasa
+  family: Feragen
+- given: Ben
+  family: Glocker
+- given: Ender
+  family: Konukoglu
+- given: Ipek
+  family: Oguz
+- given: Gozde
+  family: Unal
+- given: Tom
+  family: Vercauteren
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of The 2nd International Conference on Medical Imaging with Deep Learning
+    Held in London, United Kingdom on 08-10 July 2019
+
+  Published as Volume 102 by the Proceedings of Machine Learning Research on 24 May 2019.
+
+  Volume Edited by:
+    M. Jorge Cardoso
+    Aasa Feragen
+    Ben Glocker
+    Ender Konukoglu
+    Ipek Oguz
+    Gozde Unal
+    Tom Vercauteren
+
+  Series Editors:
+    Neil D. Lawrence
+    Mark Reid
+date_str: '08--10 Jul'
+baseurl: "/v102"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+permalink: "/:title.html"
+github:
+  edit: true
+  repository: v102
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+email: ''
+conference:
+  name: International Conference on Medical Imaging with Deep Learning
+  url: 
+  location: London, United Kingdom
+  dates:
+  - 2019-07-08
+  - 2019-07-09
+  - 2019-07-10
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from /Users/neil/mlresearch/v102/midl19.bib
