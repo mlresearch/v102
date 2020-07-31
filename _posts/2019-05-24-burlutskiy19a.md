@@ -37,7 +37,7 @@ page: 92-108
 order: 92
 cycles: false
 bibtex_author: Burlutskiy, Nikolay and Pinchaud, Nicolas and Gu, Feng and H\"agg,
-  Daniel and Andersson, Mats and Bj\"ork, Lars and Eur\e'n, Kristian and Svensson,
+  Daniel and Andersson, Mats and Bj\"ork, Lars and Eur\'en, Kristian and Svensson,
   Cristina and Wil\'en, Lena Kajland and Hedlund, Martin
 author:
 - given: Nikolay
@@ -53,7 +53,7 @@ author:
 - given: Lars
   family: Björk
 - given: Kristian
-  family: Eur\e’n
+  family: Eurén
 - given: Cristina
   family: Svensson
 - given: Lena Kajland
