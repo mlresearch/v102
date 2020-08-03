@@ -63,6 +63,7 @@ baseurl: "/v102"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
+style: pmlr
 plugins:
 - jekyll-remote-theme
 remote_theme: lawrennd/proceedings
